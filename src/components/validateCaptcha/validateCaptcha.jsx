@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import HandleCaptcha from "../captcha/index";
+import HandleCaptcha from "../captcha";
 
 export default class ValidateCaptcha extends Component {
   state = {
@@ -14,6 +14,8 @@ export default class ValidateCaptcha extends Component {
       userInputCaptcha: value
     });
   };
+
+  handleClick = () => {};
 
   handleSubmit = event => {
     event.preventDefault();

@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 
 export default class Captcha extends Component {
-  state = {
-    k: ""
-  };
+
   handleCaptcha = () => {
     const alphaNumericString =
       "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";

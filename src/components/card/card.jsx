@@ -1,8 +1,8 @@
 import React, { Component, StrictMode } from "react";
 import style from "../../style/style.module.css";
 // import Captcha from "../captcha/index";
-import Captcha from ".././captcha/index";
-import ValidateCaptcha from "../validateCaptcha/index";
+import Captcha from ".././captcha";
+import ValidateCaptcha from "../validateCaptcha";
 export default class Card extends Component {
   render() {
     return (
@@ -31,7 +31,7 @@ export default class Card extends Component {
                 </h1>
               </div>
               {/* Validate captcha */}
-              <ValidateCaptcha />
+              <ValidateCaptcha resetCaptcha={Captcha}/>
             </div>
           </div>
         </div>
